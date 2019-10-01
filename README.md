@@ -41,6 +41,8 @@ Topologiczna analiza danych, czyli w skrócie z języka angielskiego TDA jest to
 Refleksja ta jest pomocna, przy pozyskiwaniu nowych graczy, w celu poprawy jakości drużyny, ponieważ podstawiając nowe cechy zawodnika do drużyny, można obserwować czy kształt barcodów się zmienia i czy przypomina bardziej wygląd drużyn z pierwszych pozycji, walczących o mistrzostwo ligi angielskiej. 
 </p>
 
+<h6>Dodatkowe wnioski</h6>
+<p>Podczas pisania podsumowania, wychwyciełem jeszcze ciekawe zależności pomiędzy barcodami. Patrząc z perspektwy historycznej w lidze angielskiej od zawsze jest walka, aby wejść do top 4, czyli czterech najlepszych drużyn. Przeważnie o miejsce, które będą mieć ostatecznie drużyny w top 4 walczy 5 druzyn. Wystarczy popatrzeć na współczsne wyniki, aby zdać sobie sprawę, że o mistrzostwo walczą tylko dwie drużyny Liverpool i Manchester City. Ich wykresy jeszcze bardziej podkreślają zróżniocowanie poszczególnych graczy. Może to świadczyć o jednym lub dwóch wyróżniających się graczach, którzy przewodzą w tabeli ilości strzelonych bramek. Ta sama analiza dotyczy się Manchesteru City, ale tam jest inna zasada. Przed ostatni pasek jest krótszy. Dlaczego? Nie wiem dokładnie, ale mogę się domyślac, że gracze w Liverpool mają są bardziej zróżnicowanymi graczami i bardziej angażują się w grę całego zespołu, nie skupiając się wyłącznie na ilości strzelonych goli, ale również na prowadzeniu gry.</p>
 
 
 </ol>
