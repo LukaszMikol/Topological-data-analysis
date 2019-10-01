@@ -9,13 +9,13 @@ Topologiczna analiza danych, czyli w skrócie z języka angielskiego TDA jest to
   <!-- 1 -->
   
   <li><b>Cel projektu</b></li>
-<p>Celem projektu jest analiza drużyn piłkarskich w lidze angielskiej, a dokładniej eksploracja statystyk piłkarzy i sprawdzenie zależności pomiędzy cechami piłkarzy w drużynie – analiza zostanie wykonana za pomocą języka R.</p>
+<p>Celem projektu jest analiza drużyn piłkarskich w lidze angielskiej, a dokładniej eksploracja statystyk piłkarzy i sprawdzenie zależności pomiędzy cechami piłkarzy w drużynie.</p>
 
   <!-- 2 -->
   
 
 <li><b>Wykotrzystane narzędzia</b></li>
-  <p>
+  <p>Analiza danych zostanie wykonana za pomocą języka R wykorzystującego bibliotekę TDA. Kod będzie implementowany w środowiku programistycznym RStudio.</p>
   
    <!-- 3 -->
   
