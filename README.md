@@ -22,14 +22,18 @@ Topologiczna analiza danych, czyli w skrócie z języka angielskiego TDA jest to
 
 <li><b>Sposób realizacji projektu</b></li>
   <p>Realizując projekt, badana była siła ofensywna zespołów względem miejsca, które zajmowały w aktualnej ligowej tabeli. Do zmierzenia siły ofensywnej klubu, branych zostało dwunastu najbardziej bramkostrzelnych graczy: mierząc potencjał ofensywny każdego z nich w sześciu wymiarach, zestawiają ze sobą takie statystyki jak: ilość bramek, oddane strzały, strzały w światło bramki, dokładność długich podań, podania, stworzone okazję na bramkę. 
-Poniżej zostały wklejone wykresy, których kolejność jest identyczna jak miejsce w ligowej tabeli (zdjęcie poniżej to zespół na pozycji 1, drugie zespół – pozycja druga,   trzecie zdjęcie – pozycja trzecia itd.). </p>
+  
+  <p>W jakim folerze znajdują się pliki z klubami i dane statystyczne </p>
+ </p>
 
 
    <!-- 4 -->
 <li><b>Omówienie kodu</b></li>
-<p>W jakim folerze znajdują się pliki z klubami</p>
-<p>Omówienie kodu</p>
-<p>Generowanie wykresów</p>
+
+<p>Kod wraz z komentarzami przedstawiony jest w sekcji blabla </p>
+<p>Poniżej zostały wklejone wykresy, których kolejność jest identyczna jak miejsce w ligowej tabeli (zdjęcie poniżej to zespół na pozycji 1, drugie zespół – pozycja druga,   trzecie zdjęcie – pozycja trzecia itd.).
+[powiedz gdzie znajduje się plik pdf z wygenerowanymi wartosciami]
+</p>
 
    <!-- 5 -->
 <li><b>Wnioski</b></li>
