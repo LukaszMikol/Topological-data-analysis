@@ -21,7 +21,7 @@ Topologiczna analiza danych (TDA) jest to nowe i innowacyjne podejście do anali
   
 
 <li><b>Sposób realizacji projektu</b></li>
-  <p>Realizując projekt, badana była siła ofensywna zespołów względem miejsca, które zajmowały w aktualnej ligowej tabeli. Do zmierzenia siły ofensywnej klubu, branych zostało dwunastu najbardziej bramkostrzelnych graczy: mierząc potencjał ofensywny każdego z nich w sześciu wymiarach, zestawiają ze sobą takie statystyki jak: ilość bramek, oddane strzały, strzały w światło bramki, dokładność długich podań, podania, stworzone okazję na bramkę. 
+  <p>Realizując projekt, badana jest siła ofensywna zespołów względem miejsca, które zajmują w aktualnej (na okres tworzenia projektu) ligowej tabeli. Do zmierzenia siły ofensywnej klubu, branych zostało dziesięciu najbardziej bramkostrzelnych graczy, mierząc potencjał ofensywny każdego z nich w sześciu wymiarach – takich jak: ilość bramek, oddane strzały, strzały w światło bramki, dokładność długich podań, podania, stworzone okazje na bramkę. 
   
   <p>W jakim folerze znajdują się pliki z klubami i dane statystyczne </p>
  </p>
