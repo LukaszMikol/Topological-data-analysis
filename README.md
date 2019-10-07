@@ -28,7 +28,7 @@ Topologiczna analiza danych (TDA) jest to nowe i innowacyjne podejście do anali
    <!-- 4 -->
 <li><b>Omówienie technicznych aspektów projektu</b></li>
 
-<p>Kod wraz z komentarzami przedstawiony jest w folderze: Projekt_tda. Aby uruchomić kod należy pobrać RStudio i uruchomić projekt z plikiem "Main.r", w którym zawarty jest kod wraz z wytłumaczonym działanie w komentarzach.</p>
+<p>Kod wraz z komentarzami przedstawiony jest w folderze: Projekt_tda. Aby uruchomić kod należy pobrać RStudio i uruchomić projekt z plikiem "Main.r".</p>
 
 <p>Pliki ze statystykami zawodników zamieszczone są w folderze "Projekt_tda/kluby/".</p>
 
