@@ -22,18 +22,18 @@ Topologiczna analiza danych (TDA) jest to nowe i innowacyjne podejście do anali
 
 <li><b>Sposób realizacji projektu</b></li>
   <p>Realizując projekt, badana jest siła ofensywna zespołów względem miejsca, które zajmują w aktualnej (na okres tworzenia projektu) ligowej tabeli. Do zmierzenia siły ofensywnej klubu, branych będzie dziesięciu najbardziej bramkostrzelnych graczy. Potecjał ofensywny każdego z graczy będzie badany w sześciu wymiarach – takich jak: ilość bramek, oddane strzały, strzały w światło bramki, dokładność długich podań, podania, stworzone okazje na bramkę. 
-  
-  <p>W jakim folerze znajdują się pliki z klubami i dane statystyczne </p>
  </p>
 
 
    <!-- 4 -->
-<li><b>Omówienie kodu</b></li>
+<li><b>Omówienie technicznych aspektów projektu</b></li>
 
-<p>Kod wraz z komentarzami przedstawiony jest w sekcji blabla </p>
-<p>Poniżej zostały wklejone wykresy, których kolejność jest identyczna jak miejsce w ligowej tabeli (zdjęcie poniżej to zespół na pozycji 1, drugie zespół – pozycja druga,   trzecie zdjęcie – pozycja trzecia itd.).
-[powiedz gdzie znajduje się plik pdf z wygenerowanymi wartosciami]
-</p>
+<p>Kod wraz z komentarzami przedstawiony jest w folderze: Projekt_tda. Aby uruchomić kod należy pobrać RStudio i uruchomić projekt z plikiem "Main.r", w którym zawarty jest kod wraz z wytłumaczonym działanie w komentarzach.</p>
+
+<p>Pliki ze statystykami zawodników zamieszczone są w folderze "Projekt_tda/kluby/".</p>
+
+<p>Natomiast aktualna tabla ligii angielskie jest w pliku "Projekt_tda/TeamStats.csv".</p>
+
 
    <!-- 5 -->
 <li><b>Wnioski</b></li>
