@@ -15,7 +15,7 @@ Topologiczna analiza danych (TDA) jest to nowe i innowacyjne podejście do anali
   
 
 <li><b>Wykotrzystane narzędzia</b></li>
-  <p>Analiza danych zostanie wykonana za pomocą języka R wykorzystującego bibliotekę TDA. Kod będzie implementowany w środowiku programistycznym RStudio.</p>
+  <p>Analiza danych zostanie wykonana za pomocą języka R, wykorzystującego bibliotekę TDA. Kod będzie implementowany w środowiku programistycznym RStudio.</p>
   
    <!-- 3 -->
   
