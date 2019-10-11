@@ -1,7 +1,7 @@
 # tda
 <h1><b>Topologiczna analiza danych</b> – projekt praktyczny</h1>
 
-Topologiczna analiza danych (TDA) jest to nowe i innowacyjne podejście do analizy danch, które uwzglęnia, że dane mają kształt. Topologiczny kształt danych daje możlwiość, aby uprościć dany kształ, wyróżniając punkty o podobnych charakterystykach. Zatem trawnym stwierdzeniem jest, że metoda ta szuka zależności pomiędzy danymi, jednak nie daje klarownej odpowiedzi: dlaczego ta zależność występuje.    
+Topologiczna analiza danych (TDA) jest to nowe i innowacyjne podejście do analizy danch, które uwzglęnia, że dane mają kształt. Topologiczny kształt danych daje możliwość, aby uprościć dany kształt, wyróżniając punkty o podobnych charakterystykach. Zatem trafnym stwierdzeniem jest, że metoda ta szuka zależności pomiędzy danymi, jednak nie daje klarownej odpowiedzi: dlaczego ta zależność występuje.    
 <br>
 <h2>Poniżej jest zrealizowany i opisany krok po kroku projekt, wykorzystujący metodę TDA.</h2>
 <ol>
