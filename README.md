@@ -38,9 +38,19 @@ Topologiczna analiza danych (TDA) jest to nowe i innowacyjne podejście do anali
 </p>
 
 
-<p>Pliki ze statystykami zawodników zamieszczone są w folderze "Projekt_tda/kluby/".</p>
+<p>Pliki ze statystykami zawodników poszczególnych klubów zamieszczone są w folderze "Projekt_tda/kluby/".</p>
+
+<p align="center">
+  <img src="https://github.com/LukaszMikol/tda/blob/master/Projekt_tda/zdjecia_do_opisu/clubs_stats.jpg" alt="clubs_stats" title="Struktura plików">
+</p>
+
 
 <p>Natomiast aktualna tabela ligii angielskie jest w pliku "Projekt_tda/TeamStats.csv".</p>
+
+<p align="center">
+  <img src="https://github.com/LukaszMikol/tda/blob/master/Projekt_tda/zdjecia_do_opisu/stats_league.jpg" alt="Statystyki ligi" title="Statystyki ligi">
+</p>
+
 
 
    <!-- 5 -->
