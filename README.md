@@ -35,7 +35,7 @@ Topologiczna analiza danych (TDA) jest to nowe i innowacyjne podejście do anali
 <p>Natomiast aktualna tabela ligii angielskie jest w pliku "Projekt_tda/TeamStats.csv".</p>
 
 <p align="center">
-  <img src="https://github.com/LukaszMikol/tda/blob/master/Projekt_tda/zdjecia_do_opisu/stats_league.jpg" alt="Statystyki ligi" title="Statystyki ligi">
+  <img src="https://github.com/LukaszMikol/tda/blob/master/Projekt_tda/photos_to_describe/stats_league.jpg" alt="Statystyki ligi" title="Statystyki ligi">
 </p>
 
 
@@ -46,7 +46,7 @@ Topologiczna analiza danych (TDA) jest to nowe i innowacyjne podejście do anali
 <p>Poniżej jest przedstawiony przykładowy wykres barcode dla pierwszej drużyny ligi angielskiej: Liverpool'u.</p>
 
 <p align="center">
-  <img src="https://github.com/LukaszMikol/tda/blob/master/Projekt_tda/zdj/1.jpeg" alt="barcode_photo" title="Barcode">
+  <img src="https://github.com/LukaszMikol/tda/blob/master/Projekt_tda/photos/1.jpeg" alt="barcode_photo" title="Barcode">
 </p>
 
 <hr>
