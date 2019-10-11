@@ -9,7 +9,7 @@ Topologiczna analiza danych (TDA) jest to nowe i innowacyjne podejście do anali
   <!-- 1 -->
   
   <li><b>Cel projektu</b></li>
-<p>Celem projektu jest analiza drużyn piłkarskich w lidze angielskiej, a dokładniej eksploracja zależności pomiędzy cechami piłkarzy w drużynie.</p>
+<p>Celem projektu jest analiza drużyn piłkarskich w lidze angielskiej, a dokładniej eksploracja zależności pomiędzy cechami piłkarzy w drużynie, a osiągniętymi wynikami przez zespół.</p>
 
   <!-- 2 -->
   
