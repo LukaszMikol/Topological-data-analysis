@@ -43,11 +43,19 @@ Topologiczna analiza danych (TDA) jest to nowe i innowacyjne podejście do anali
    <!-- 5 -->
 <li><b>Wnioski</b></li>
 <p>Wygenerowane przez program wykresy są przedstawione w pliku "all_clubs_diag.pdf" oraz w pojedynczych plikach jpg w folderze "Projekt_tda/zdj/"</p>
-<p>Poniżej jest przedstawiony przykładowy wykres barcode dla pierwszej drużyny ligi angielskiej: Liverpool'u.</p>
-
+<p>Poniżej jest przedstawiony przykładowy wykres barcode dla: </p>
+<ol>
+  <li> pierwszej drużyny ligi angielskiej: Liverpool</li>
 <p align="center">
   <img src="https://github.com/LukaszMikol/tda/blob/master/Projekt_tda/photos/1.jpeg" alt="barcode_photo" title="Barcode">
 </p>
+  
+  <li>ostatniej drużyny: Huddersfield Town</li>
+
+<p align="center">
+  <img src="https://github.com/LukaszMikol/tda/blob/master/Projekt_tda/photos/20.jpeg" alt="barcode_photo" title="Barcode">
+</p>
+</ol>
 
 <hr>
 <p>Wnioski, które można wyciągnąć z powyższych barcode: zaobserwowano mocne zależności, dotyczące większego zróżnicowania umiejętności u części graczy ("kolumny wypukłe i wklęsłe").  Dostrzeżono, że drużyny, które zajmują pierwsze pozycje w lidzie ich wykresy są bardziej wypukłe, od drużyn które zajmują dalsze miejsca w lidze, jak i ostatnie – wykresy są wklęsłe. Może to świadczyć o zróżnicowaniu graczy, których kluby zajmują wysokie miejsce w lidze, ponieważ długość życia poszczególnych punktów (jeden gracz, to jest jeden punkt), świadczy o tym, że ich umiejętności są bardziej zróżnicowane od zawodników w słabszych klubach. Udowadnia, to że punkty, podczas poddawania ich procesowi zaszumienia, łączą się później a więc ich rozmieszczenie na wykresie jest bardziej zróżnicowane, co przekłada się na dłuższą ilość życia dla punktu – symbolizującego zawodnika – co pokazuje, że ich umiejętności są również bardziej zróżnicowane. 
