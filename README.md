@@ -39,7 +39,7 @@ Topologiczna analiza danych (TDA) jest to nowe i innowacyjne podejście do anali
 <li><b>Wnioski</b></li>
 <p>Wygenerowane przez program wykresy są przedstawione w pliku "all_clubs_diag.pdf" oraz w pojedynczych plikach jpg w folderze "Projekt_tda/zdj/"</p>
 <p>Poniżej jest przedstawiony przykładowy wykres barcode dla pierwszej drużyny ligi angielskiej: Liverpool'u.</p>
-
+<hr>
 <p align="center">
   <img src="https://github.com/LukaszMikol/tda/blob/master/Projekt_tda/zdj/1.jpeg" alt="350" title="hover text">
 </p>
