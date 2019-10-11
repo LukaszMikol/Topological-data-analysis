@@ -21,7 +21,7 @@ Topologiczna analiza danych (TDA) jest to nowe i innowacyjne podejście do anali
   
 
 <li><b>Sposób realizacji projektu</b></li>
-  <p>Realizując projekt, badana jest siła ofensywna zespołów względem miejsca, które zajmują w aktualnej (na okres tworzenia projektu) ligowej tabeli. Do zmierzenia siły ofensywnej klubu, branych będzie dziesięciu najbardziej bramkostrzelnych graczy. Potecjał ofensywny każdego z graczy będzie badany w sześciu wymiarach – takich jak: ilość bramek, oddane strzały, strzały w światło bramki, dokładność długich podań, podania, stworzone okazje na bramkę. 
+  <p>Realizując projekt, badana jest siła ofensywna zespołów względem miejsca, które zajmują w aktualnej (na okres tworzenia projektu) ligowej tabeli. Do zmierzenia siły ofensywnej klubu, branych pod uwagę będzie dziesięciu najbardziej bramkostrzelnych graczy. Potecjał ofensywny każdego z graczy będzie badany w sześciu wymiarach – takich jak: ilość bramek, oddane strzały, strzały w światło bramki, dokładność długich podań, podania, stworzone okazje na bramkę. 
  </p>
 
 
@@ -32,16 +32,16 @@ Topologiczna analiza danych (TDA) jest to nowe i innowacyjne podejście do anali
 
 <p>Pliki ze statystykami zawodników zamieszczone są w folderze "Projekt_tda/kluby/".</p>
 
-<p>Natomiast aktualna tabla ligii angielskie jest w pliku "Projekt_tda/TeamStats.csv".</p>
+<p>Natomiast aktualna tabela ligii angielskie jest w pliku "Projekt_tda/TeamStats.csv".</p>
 
 
    <!-- 5 -->
 <li><b>Wnioski</b></li>
-<p>Wygenerowane przez kod wykresy są przedstawione w pliku "all_clubs_diag.pdf" oraz w pojedynczych plikach jpg w folderze "Projekt_tda/zdj/"</p>
+<p>Wygenerowane przez program wykresy są przedstawione w pliku "all_clubs_diag.pdf" oraz w pojedynczych plikach jpg w folderze "Projekt_tda/zdj/"</p>
 <p>Wnioski, które można wyciągnąć z powyższych barcode: zaobserwowano mocne zależności, dotyczące większego zróżnicowania umiejętności u części graczy ("kolumny wypukłe i wklęsłe").  Dostrzeżono, że drużyny, które zajmują pierwsze pozycje w lidzie ich wykresy są bardziej wypukłe, od drużyn które zajmują dalsze miejsca w lidze, jak i ostatnie – wykresy są wklęsłe. Może to świadczyć o zróżnicowaniu graczy, których kluby zajmują wysokie miejsce w lidze, ponieważ długość życia poszczególnych punktów (jeden gracz, to jest jeden punkt), świadczy o tym, że ich umiejętności są bardziej zróżnicowane od zawodników w słabszych klubach. Udowadnia, to że punkty, podczas poddawania ich procesowi zaszumienia, łączą się później a więc ich rozmieszczenie na wykresie jest bardziej zróżnicowane, co przekłada się na dłuższą ilość życia dla punktu – symbolizującego zawodnika – co pokazuje, że ich umiejętności są również bardziej zróżnicowane. 
-Refleksja ta jest pomocna, przy pozyskiwaniu nowych graczy, w celu poprawy jakości drużyny, ponieważ podstawiając nowe cechy zawodnika do drużyny, można obserwować czy kształt barcodów się zmienia i czy przypomina bardziej wygląd drużyn z pierwszych pozycji, walczących o mistrzostwo ligi angielskiej. 
+Refleksja ta jest pomocna, przy pozyskiwaniu nowych graczy, w celu poprawy jakości drużyny, ponieważ podstawiając cechy potencjalnego nowo wybieranego członka do zespołu (można podstawić również kilku graczy i obserwować zmianę barcodów), można obserwować czy kształt barcodów się zmienia i czy przypomina bardziej wygląd drużyn z pierwszych pozycji, walczących o mistrzostwo ligi angielskiej. 
 </p>
 
 <h6>Dodatkowe wnioski</h6>
-<p>Patrząc z perspektwy historycznej w lidze angielskiej od zawsze jest walka, aby wejść do top 4, czyli czterech najlepszych drużyn. Przeważnie o miejsce, które będą mieć ostatecznie drużyny w top 4 walczy 5 druzyn. Wystarczy popatrzeć na współczsne wyniki, aby zdać sobie sprawę, że o mistrzostwo walczą tylko dwie drużyny Liverpool i Manchester City. Ich wykresy jeszcze bardziej podkreślają zróżniocowanie poszczególnych graczy. Może to świadczyć o jednym lub dwóch wyróżniających się graczach, którzy przewodzą w tabeli ilości strzelonych bramek. Ta sama analiza dotyczy się Manchesteru City, ale tam jest inna zasada. Przed ostatni pasek jest krótszy. Dlaczego? Można spekulować, że gracze w Liverpool są bardziej zróżnicowanymi graczami i bardziej angażują się w grę całego zespołu, nie skupiając się wyłącznie na ilości strzelonych goli, ale również na prowadzeniu gry.</p>
+<p>Patrząc z perspektwy historycznej w lidze angielskiej od zawsze jest walka, aby wejść do top 4, czyli czterech najlepszych drużyn. Przeważnie o miejsce, które będą mieć ostatecznie drużyny w top 4 walczy 5 drużyn. Wystarczy popatrzeć na współczesne wyniki, aby zdać sobie sprawę, że o mistrzostwo walczą tylko dwie drużyny Liverpool i Manchester City. Ich wykresy jeszcze bardziej podkreślają zróżniocowanie poszczególnych graczy. Może to świadczyć o jednym lub dwóch wyróżniających się graczach, którzy przewodzą w tabeli ilości strzelonych bramek. Ta sama analiza tyczy się Manchesteru City, ale tam jest inna zasada. Przed ostatni pasek jest krótszy. Dlaczego? Można spekulować, że gracze w Liverpool są bardziej zróżnicowanymi graczami i bardziej angażują się w grę całego zespołu, nie skupiając się wyłącznie na ilości strzelonych goli, ale również na prowadzeniu gry.</p>
 </ol>
