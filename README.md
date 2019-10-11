@@ -31,7 +31,7 @@ Topologiczna analiza danych (TDA) jest to nowe i innowacyjne podejście do anali
 <p>Kod wraz z komentarzami przedstawiony jest w folderze: Projekt_tda. Aby uruchomić kod należy pobrać RStudio i uruchomić projekt z plikiem "Main.r".</p>
 
 <p align="center">
-  <img src="https://github.com/LukaszMikol/tda/blob/master/Projekt_tda/zdjecia_do_opisu/1_code.jpg" alt="Code_1" title="Code photo one">
+  <img src="https://github.com/LukaszMikol/tda/blob/master/Projekt_tda/zdjecia_do_opisu/1_code.png" alt="Code_1" title="Code photo one">
   <img src="https://github.com/LukaszMikol/tda/blob/master/Projekt_tda/zdjecia_do_opisu/2_code.jpg" alt="Code_2" title="Code photo two">
   <img src="https://github.com/LukaszMikol/tda/blob/master/Projekt_tda/zdjecia_do_opisu/3_code.jpg" alt="Code_3" title="Code photo three">
   <img src="https://github.com/LukaszMikol/tda/blob/master/Projekt_tda/zdjecia_do_opisu/4_code.jpg" alt="Code_4" title="Code photo four">
