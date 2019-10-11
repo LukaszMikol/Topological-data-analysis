@@ -55,9 +55,9 @@ max1 <- c()
 for(klub in clubs_rank){
   iter <- iter + 1
 
-  # kluby/[nazwa_klubu].csv - uniwersalna scieżka dostępu do pliku
+  # clubs/[nazwa_klubu].csv - uniwersalna scieżka dostępu do pliku
   # wczytwanie statystyk do dataFrame
-  data <- read.csv(paste("kluby",klub,sep="/"),header = TRUE)
+  data <- read.csv(paste("clubs",klub,sep="/"),header = TRUE)
 
   # sortuje malejące wg. goli
   data <- data[order(-data$Goals),]
@@ -91,7 +91,7 @@ par(mfrow=c(2,1))
 for(klub in clubs_rank){
 
   # wczytwanie statystyk do dataFrame
-  data <- read.csv(paste("kluby",klub,sep="/"),header = TRUE) 
+  data <- read.csv(paste("clubs",klub,sep="/"),header = TRUE) 
   
   # zamiana wartości NA na 0
   data[is.na(data)] <- 0 
