@@ -71,7 +71,7 @@ Operacje MapReduce wykonywane są w trzech krokach:
    <!-- 5 -->
 	<li>Zadanie: Który szczep wingoron jest najbardziej popularny?</li>
     <p>Kod znajduje się w: <i>wine_reviews/03_the_most_popular_variety.py</i></p>
-    <p>Rezultat: </p>
+    <h3>Rezultat: </h3>
     <p align="center">
       <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/result_03_py.png" alt="the_most_popular_variety" title="the most popular variety">
     </p>
@@ -83,7 +83,7 @@ Operacje MapReduce wykonywane są w trzech krokach:
         <!-- 7 -->
     <li>Zadanie: Który kraj ma najwięcej win typu “Pinot Grigio”?</li>
     <p>Kod znajduje się w: <i>wine_reviews/04_the_most_amout_wine.py</i></p>
-    <p>Wynik: </p>
+    <h3>Wynik: </h3>
     <p align="center">
       <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/result_04_py.png" alt="the_most_amout_wine" title="the most amount wine">
     </p>
@@ -95,11 +95,11 @@ Operacje MapReduce wykonywane są w trzech krokach:
         <!-- 8 -->
     <li>Zadanie: Ile kosztuje najlepiej ocenione Prosecco?</li>
     <p>Kod znajduje się w: <i>wine_reviews/05_cost_the_best_rate_wine.py</i></p>
-    <p>Rezultat: </p>
+    <h3>Rezultat: </h3>
     <p align="center">
       <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/result_05_py.png" alt="cost_the_best_rating_prosecco" title="cost the best rating proseccos">
     </p>
-    <p>Wynik: </p>
+    <h3>Wynik: </h3>
     <p align="center">
       <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/cost_the_best_rating_prosecco.png" alt="cost_the_best_rating_prosecco" title="cost the best rating prosecco">
     </p>
@@ -107,7 +107,7 @@ Operacje MapReduce wykonywane są w trzech krokach:
         <!-- 9 -->
     <li>Zadanie:  Mając budżet $10 po wino jakiego szczepu najlepiej sięgnąć?</li>
     <p>Kod znajduje się w: <i>wine_reviews/06_wine_for_10$.py</i></p>
-    <p>Rezultat: </p>
+    <h3>Rezultat: </h3>
     <p align="center">
       <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/result_06_py.png" alt="cost_the_best_rating_prosecco" title="cost the best rating proseccos">
     </p>
