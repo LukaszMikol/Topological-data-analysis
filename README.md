@@ -71,7 +71,7 @@ Operacje MapReduce wykonywane są w trzech krokach:
    <!-- 5 -->
 	<li>Zadanie: Który szczep wingoron jest najbardziej popularny?</li>
     <p>Kod znajduje się w: <i>wine_reviews/03_the_most_popular_variety.py</i></p>
-    <h3>Rezultat: </h3>
+    <p>Rezultat: </p>
     <p align="center">
       <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/result_03_py.png" alt="the_most_popular_variety" title="the most popular variety">
     </p>
@@ -95,7 +95,7 @@ Operacje MapReduce wykonywane są w trzech krokach:
         <!-- 8 -->
     <li>Zadanie: Ile kosztuje najlepiej ocenione Prosecco?</li>
     <p>Kod znajduje się w: <i>wine_reviews/05_cost_the_best_rate_wine.py</i></p>
-    <h3>Rezultat: </h3>
+    <p>Rezultat: </p>
     <p align="center">
       <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/result_05_py.png" alt="cost_the_best_rating_prosecco" title="cost the best rating proseccos">
     </p>
@@ -107,7 +107,7 @@ Operacje MapReduce wykonywane są w trzech krokach:
         <!-- 9 -->
     <li>Zadanie:  Mając budżet $10 po wino jakiego szczepu najlepiej sięgnąć?</li>
     <p>Kod znajduje się w: <i>wine_reviews/06_wine_for_10$.py</i></p>
-    <h3>Rezultat: </h3>
+    <p>Rezultat: </p>
     <p align="center">
       <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/result_06_py.png" alt="cost_the_best_rating_prosecco" title="cost the best rating proseccos">
     </p>
@@ -119,6 +119,6 @@ Operacje MapReduce wykonywane są w trzech krokach:
 
   </ol>
 <li><b>Wnioski</b></li>
-</ol>
+
 <hr>
 <p>MapReduce jest idealnym algorytmem do przetważania ogromnym ilości danych. Jeżeli operujemy na mniejszych zbiorach szybciej można wyciągnąć informacje z pliku za pomocą biblioteki pandas, która jest prostsza w użyciu, jednak przy większej ilości plików, ponad 5GB, mapreduce jest idealnym wyborem.</p>
