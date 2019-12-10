@@ -69,7 +69,7 @@ Operacje MapReduce wykonywane są w trzech krokach:
     </p>
     <p>Wyniki są identyczny i wskazują, iż: ilość francuskich win droższych niż $100 wynosi: 1126.</p>
    <!-- 5 -->
-	<li>Kolejne zadanie: Który szczep wingoron jest najbardziej popularny?</li>
+	<li>Zadanie: Który szczep wingoron jest najbardziej popularny?</li>
     <p>Kod znajduje się w: <i>wine_reviews/03_the_most_popular_variety.py</i></p>
     <p>Rezultat: </p>
     <p align="center">
@@ -79,47 +79,46 @@ Operacje MapReduce wykonywane są w trzech krokach:
     <p align="center">
       <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/the_most_popular_variety.png" alt="the_most_popular_variety" title="the most popular variety">
     </p>
-    <p>Według – potwierdzonych dwoma metodami – danych najbardziej popularny szczep to: Chardonnay.</p>
+    <p>Według – potwierdzonych dwoma metodami – danych najbardziej popularny szczep to: Chardonnay. Interesujące jest, że można zobaczyć rozpierzność pomiędzy policzoną ilością występowania szczepu "Chardonnay", MapReduce – 14482, a biblioteką Pandas – 14481. </p>
         <!-- 7 -->
-    <li>Rozwiązywane jest kolejne zadania: Który kraj ma najwięcej win typu “Pinot Grigio”?</li>
+    <li>Zadanie: Który kraj ma najwięcej win typu “Pinot Grigio”?</li>
     <p>Kod znajduje się w: <i>wine_reviews/04_the_most_amout_wine.py</i></p>
-    <p>Rezultatem jest wynik w terminalu: </p>
+    <p>Wynik: </p>
     <p align="center">
       <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/result_04_py.png" alt="the_most_amout_wine" title="the most amount wine">
     </p>
-    <p>Wynik uzyskany w bibliotece panda:</p>
+    <p>Wynik:</p>
     <p align="center">
       <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/the_most_amount_wine_in_country.png" alt="the_most_amount_wine_in_country" title="the most amount wine in country">
     </p>
-    <p>Wyniki są identyczne</p>
+    <p>Odpowiedź: Włochy posiadają najwięcej win typu “Pinot Grigio”.</p>
         <!-- 8 -->
-    <li>Rozwiązywane jest kolejne zadania: Ile kosztuje najlepiej ocenione Prosecco?</li>
+    <li>Zadanie: Ile kosztuje najlepiej ocenione Prosecco?</li>
     <p>Kod znajduje się w: <i>wine_reviews/05_cost_the_best_rate_wine.py</i></p>
-    <p>Rezultatem jest wynik w terminalu: </p>
+    <p>Rezultat: </p>
     <p align="center">
       <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/result_05_py.png" alt="cost_the_best_rating_prosecco" title="cost the best rating proseccos">
     </p>
-    <p>Wynik uzyskany w bibliotece panda:</p>
+    <p>Wynik: </p>
     <p align="center">
       <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/cost_the_best_rating_prosecco.png" alt="cost_the_best_rating_prosecco" title="cost the best rating prosecco">
     </p>
-    <p>Wyniki są identyczne</p>
+    <p>Najlepiej ocenione Prosecco kosztuje $38.</p>
         <!-- 9 -->
-    <li>Rozwiązywane jest kolejne zadania:  Mając budżet $10 po wino jakiego szczepu najlepiej sięgnąć?</li>
+    <li>Zadanie:  Mając budżet $10 po wino jakiego szczepu najlepiej sięgnąć?</li>
     <p>Kod znajduje się w: <i>wine_reviews/06_wine_for_10$.py</i></p>
-    <p>Rezultatem jest wynik w terminalu: </p>
+    <p>Rezultat: </p>
     <p align="center">
       <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/result_06_py.png" alt="cost_the_best_rating_prosecco" title="cost the best rating proseccos">
     </p>
-    <p>Wynik uzyskany w bibliotece panda:</p>
+    <p>Wynik:</p>
     <p align="center">
       <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/the_best_choice_for_10$.png" alt="the_best_choice_for_10$" title="the_best_choice_for_10$">
     </p>
-    <p>Wyniki są identyczne</p>
+    <p>W tym pytaniu nie ma jednoznacznej odpowiedzi na to pytanie, ponieważ jest kilka win w cenie do $10, które dostały 81 punktów. W przypadku pliku wykonawczego algorytmu MapReduce, zostały wybrane najlepsze wina wg. każej półki cenowej.</p>
 
   </ol>
-  <p>Sprawdzenie w pandas... Screen</p>
-  </ol>
 <li><b>Wnioski</b></li>
+</ol>
 <hr>
 <p>MapReduce jest idealnym algorytmem do przetważania ogromnym ilości danych. Jeżeli operujemy na mniejszych zbiorach szybciej można wyciągnąć informacje z pliku za pomocą biblioteki pandas, która jest prostsza w użyciu, jednak przy większej ilości plików, ponad 5GB, mapreduce jest idealnym wyborem.</p>
