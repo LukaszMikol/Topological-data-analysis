@@ -1,67 +1,125 @@
-# tda
-<h1><b>Topologiczna analiza danych</b> – projekt praktyczny</h1>
+# Hadoop MapReduce 
+<h1><b>Hadoop MapReduce</b> – projekt praktyczny</h1>
 
-Topologiczna analiza danych (TDA) jest to nowe i innowacyjne podejście do analizy danch, które uwzglęnia, że dane mają kształt. Topologiczny kształt danych daje możliwość, aby uprościć dany kształt, wyróżniając punkty o podobnych charakterystykach. Zatem trafnym stwierdzeniem jest, że metoda ta szuka zależności pomiędzy danymi, jednak nie daje klarownej odpowiedzi: dlaczego ta zależność występuje.    
+MapReduce to algorytm do przetwarzania ogromnych zbiorów danych, który wykonuje obliczenia w sposób równoległy, rozproszony, co wpływa pozytywnie na jego wydajność.
+
+Operacje MapReduce wykonywane są w trzech krokach:
+<ul>
+  <li><b>Mapper </b>pobiera dane z pliku linia po lini, a następnie dzieli zadania na mniejsze problemy, zwracając wartości, które zostaną wybrane.</li>
+  <li><b>Combiner </b>jest to krok optymalizacyjny - zmiejszający czas wykonywania zadania - w którym sortujemy po kluczu wartości i je grupujemy (Wartości i kluczy zostały przekazane z mappera). Ważną infromacją jest, iż combiner działa na pojedynczej linii, czyli pojedynczych przekazanych wartościach.</li>
+  <li><b>Reducer </b>redukuje wartości względem funkcji, która zostanie użyta, może być to: warość minmalna, maaksymalna, suma, sortowanie.</li>
+</ul>
+
 <br>
-<h2>Poniżej jest zrealizowany i opisany krok po kroku projekt, wykorzystujący metodę TDA.</h2>
+<h2>Poniżej jest zrealizowany i opisany krok po kroku projekt, wykorzystujący algorytm MapReduce.</h2>
 <ol>
   
   <!-- 1 -->
   
   <li><b>Cel projektu</b></li>
-<p>Celem projektu jest analiza drużyn piłkarskich w lidze angielskiej, a dokładniej eksploracja zależności pomiędzy cechami piłkarzy w drużynie, a osiągniętymi wynikami przez zespół.</p>
+<p>Celem projektu jest analiza danych dotycząych wina oraz dostareczenie odpowiedzi na pytania: </p>
 
+<ol>
+  <li>Ile jest francuskich win droższych niż $100?</li>
+  <li>Który szczep wingoron jest najbardziej popularny?</li>
+  <li>Który kraj ma najwięcej win typu: "pinot grigio"?</li>
+  <li>Ile kosztuje najlepiej ocenione "prosecco"?</li>
+  <li>Mając budżet $10, po wino jakiego szczepu najlepiej sięgnąć?</li>
+</ol>
+
+<br>
   <!-- 2 -->
   
 
 <li><b>Wykotrzystane narzędzia</b></li>
-  <p>Analiza danych zostanie wykonana za pomocą języka R, wykorzystującego bibliotekę TDA. Kod będzie implementowany w środowiku programistycznym RStudio.</p>
+  <p>Analiza danych zostanie wykonana za pomocą języka Python, wykorzystującego biblioteki: MRJob oraz MRStep. W sprawdzaniu wyników (odpowiedzi na pytania) pomocne będzie narzędzie jupyther notebook, w którym będzie importowana biblioteka Pandas używana do analizowania danych.</p>
   
    <!-- 3 -->
   
 
-<li><b>Sposób realizacji projektu</b></li>
-  <p>Realizując projekt, badana jest siła ofensywna zespołów względem miejsca, które zajmują w aktualnej (na okres tworzenia projektu) ligowej tabeli. Do zmierzenia siły ofensywnej klubu, branych pod uwagę będzie dziesięciu najbardziej bramkostrzelnych graczy. Potecjał ofensywny każdego z graczy będzie badany w sześciu wymiarach – takich jak: ilość bramek, oddane strzały, strzały w światło bramki, dokładność długich podań, podania, stworzone okazje na bramkę. 
- </p>
+<li><b>Realizacja projektu:</b></li>
 
 
-   <!-- 4 -->
-<li><b>Omówienie technicznych aspektów projektu</b></li>
-
-<p>Kod wraz z komentarzami przedstawiony jest w folderze: Projekt_tda. Aby uruchomić kod należy pobrać RStudio i uruchomić projekt z plikiem "Main.r".</p>
-
-<p>Pliki ze statystykami zawodników poszczególnych klubów zamieszczone są w folderze "Projekt_tda/kluby/".</p>
-
-<p>Natomiast aktualna tabela ligii angielskie jest w pliku "Projekt_tda/TeamStats.csv".</p>
-
-<p align="center">
-  <img src="https://github.com/LukaszMikol/tda/blob/master/Projekt_tda/photos_to_describe/stats_league.jpg" alt="Statystyki ligi" title="Statystyki ligi">
-</p>
-
-
-
+  <ol>
+    <!-- 1 -->
+    <li>Należy pobrać pliki z recenzjami win:</li>
+    <p>Dostęp do danych, znajduje się w linku: <a href="https://www.kaggle.com/zynicide/wine-reviews">plik [pliku winemag-data_first150k.csv]. </a>Jeżeli ktoś nie może pobierać danych, można skorzystać z zmniejszonego pliku, który zawiera 1000 wierszy – plik ten znajduje się: <i>wine_reviews/test.csv</i></p>
+<!--  2  -->
+    <li>Odczytanie zawartości pobranego pliku winemag-data_first150k.csv: [z użyciem biblioteki Pandas]</li>
+    <p align="center">
+      <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/tree/master/wine_reviews/screens/Review_data_jupyter_notebook.png" alt="Review_data_jupyter_notebook" title="Review data jupyter notebook">
+    </p>
+<!-- 3 -->
+    <li>Modyfikacja pliku</li>
+    <p>Na zdjęciu powyżej, dane w pierwszym wierszu posiadają nazwy nagłówków. W późniejszym etapie komplikuje to przetważanie danych algorytmem MapReduce, dlatego teraz z pliku zostaną usunięte nagłówkówki z użyciem biblioteki Pandas. Plik wykonawczy znajduje się w folderze <i>wine_reviews/screen/01_preprocessing_data.py</i></p>
+<code># odczytuje plik csv</code><br>
+<code>df = pd.read_csv("winemag-data_first150k.csv")</code><br>
+<code># separator to znak:  ~ . Zapisuje do pliku .tsv bez nagłówka i indeksów </code><br>
+<code>df.to_csv("winemag-data_without_header.tsv", sep="~", header=False, index=False)</code><br><br>
+<!-- 4 -->
+    <li>Z przygotowanym odpowiednio plikiem, można przystąpić do obliczenie pierwszego zadania: Ile jest francuskich win droższych niż $100?</li>
+    <p>Kod znajduje się w: <i>wine_reviews/02_wines_more_expensive_than_100$.py</i></p>
+    <p>Rezultatem jest wynik w terminalu: </p>
+    <p align="center">
+      <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/result_02_py.png" alt="Review_data_jupyter_notebook" title="Review data jupyter notebook">
+    </p>
+    <p>Aby sprawdzić wynik, możemy również utworzyć zapytanie w bibliotece Pandas, którego wynik jest poniżej</p>
+    <p align="center">
+      <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/amount_french_wine_over_100_$.png" alt="amount_french_wine_over_100_$" title="amount french wine over 100$">
+    </p>
+    <p>Wyniki są identyczny i wskazują, iż: ilość francuskich win droższych niż $100 wynosi: 1126.</p>
    <!-- 5 -->
+	<li>Kolejne zadanie: Który szczep wingoron jest najbardziej popularny?</li>
+    <p>Kod znajduje się w: <i>wine_reviews/03_the_most_popular_variety.py</i></p>
+    <p>Rezultat: </p>
+    <p align="center">
+      <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/result_03_py.png" alt="the_most_popular_variety" title="the most popular variety">
+    </p>
+    <p>Sprawdzenie: </p>
+    <p align="center">
+      <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/the_most_popular_variety.png" alt="the_most_popular_variety" title="the most popular variety">
+    </p>
+    <p>Według – potwierdzonych dwoma metodami – danych najbardziej popularny szczep to: Chardonnay.</p>
+        <!-- 7 -->
+    <li>Rozwiązywane jest kolejne zadania: Który kraj ma najwięcej win typu “Pinot Grigio”?</li>
+    <p>Kod znajduje się w: <i>wine_reviews/04_the_most_amout_wine.py</i></p>
+    <p>Rezultatem jest wynik w terminalu: </p>
+    <p align="center">
+      <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/result_04_py.png" alt="the_most_amout_wine" title="the most amount wine">
+    </p>
+    <p>Wynik uzyskany w bibliotece panda:</p>
+    <p align="center">
+      <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/the_most_amount_wine_in_country.png" alt="the_most_amount_wine_in_country" title="the most amount wine in country">
+    </p>
+    <p>Wyniki są identyczne</p>
+        <!-- 8 -->
+    <li>Rozwiązywane jest kolejne zadania: Ile kosztuje najlepiej ocenione Prosecco?</li>
+    <p>Kod znajduje się w: <i>wine_reviews/05_cost_the_best_rate_wine.py</i></p>
+    <p>Rezultatem jest wynik w terminalu: </p>
+    <p align="center">
+      <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/result_05_py.png" alt="cost_the_best_rating_prosecco" title="cost the best rating proseccos">
+    </p>
+    <p>Wynik uzyskany w bibliotece panda:</p>
+    <p align="center">
+      <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/cost_the_best_rating_prosecco.png" alt="cost_the_best_rating_prosecco" title="cost the best rating prosecco">
+    </p>
+    <p>Wyniki są identyczne</p>
+        <!-- 9 -->
+    <li>Rozwiązywane jest kolejne zadania:  Mając budżet $10 po wino jakiego szczepu najlepiej sięgnąć?</li>
+    <p>Kod znajduje się w: <i>wine_reviews/06_wine_for_10$.py</i></p>
+    <p>Rezultatem jest wynik w terminalu: </p>
+    <p align="center">
+      <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/result_06_py.png" alt="cost_the_best_rating_prosecco" title="cost the best rating proseccos">
+    </p>
+    <p>Wynik uzyskany w bibliotece panda:</p>
+    <p align="center">
+      <img src="https://github.com/LukaszMikol/big-data-hadoop-map-reudce-course/blob/master/wine_reviews/screens/the_best_choice_for_10$.png" alt="the_best_choice_for_10$" title="the_best_choice_for_10$">
+    </p>
+    <p>Wyniki są identyczne</p>
+
+  </ol>
+  <p>Sprawdzenie w pandas... Screen</p>
+  </ol>
 <li><b>Wnioski</b></li>
-<p>Wygenerowane przez program wykresy są przedstawione w pliku "all_clubs_diag.pdf" oraz w pojedynczych plikach jpg w folderze "Projekt_tda/zdj/"</p>
-<p>Poniżej jest przedstawiony przykładowy wykres barcode dla: </p>
-<ol>
-  <li> pierwszej drużyny ligi angielskiej: Liverpool</li>
-<p align="center">
-  <img src="https://github.com/LukaszMikol/tda/blob/master/Projekt_tda/photos/1.jpeg" alt="barcode_photo" title="Barcode">
-</p>
-  
-  <li>ostatniej drużyny: Huddersfield Town</li>
-
-<p align="center">
-  <img src="https://github.com/LukaszMikol/tda/blob/master/Projekt_tda/photos/20.jpeg" alt="barcode_photo" title="Barcode">
-</p>
-</ol>
-
 <hr>
-<p>Wnioski, które można wyciągnąć z powyższych barcode: zaobserwowano mocne zależności, dotyczące większego zróżnicowania umiejętności u części graczy ("kolumny wypukłe i wklęsłe").  Dostrzeżono, że drużyny, które zajmują pierwsze pozycje w lidzie ich wykresy są bardziej wypukłe, od drużyn które zajmują dalsze miejsca w lidze, jak i ostatnie – wykresy są wklęsłe. Może to świadczyć o zróżnicowaniu graczy, których kluby zajmują wysokie miejsce w lidze, ponieważ długość życia poszczególnych punktów (jeden gracz, to jest jeden punkt), świadczy o tym, że ich umiejętności są bardziej zróżnicowane od zawodników w słabszych klubach. Udowadnia, to że punkty, podczas poddawania ich procesowi zaszumienia, łączą się później a więc ich rozmieszczenie na wykresie jest bardziej zróżnicowane, co przekłada się na dłuższą ilość życia dla punktu – symbolizującego zawodnika – co pokazuje, że ich umiejętności są również bardziej zróżnicowane. 
-Refleksja ta jest pomocna, przy pozyskiwaniu nowych graczy, w celu poprawy jakości drużyny, ponieważ podstawiając cechy potencjalnego nowo wybieranego członka do zespołu (można podstawić również kilku graczy i obserwować zmianę barcodów), można obserwować czy kształt barcodów się zmienia i czy przypomina bardziej wygląd drużyn z pierwszych pozycji, walczących o mistrzostwo ligi angielskiej. 
-</p>
-
-<h6>Dodatkowe wnioski</h6>
-<p>Patrząc z perspektwy historycznej w lidze angielskiej od zawsze jest walka, aby wejść do top 4, czyli czterech najlepszych drużyn. Przeważnie o miejsce, które będą mieć ostatecznie drużyny w top 4 walczy 5 drużyn. Wystarczy popatrzeć na współczesne wyniki, aby zdać sobie sprawę, że o mistrzostwo walczą tylko dwie drużyny Liverpool i Manchester City. Ich wykresy jeszcze bardziej podkreślają zróżniocowanie poszczególnych graczy. Może to świadczyć o jednym lub dwóch wyróżniających się graczach, którzy przewodzą w tabeli ilości strzelonych bramek. Ta sama analiza tyczy się Manchesteru City, ale tam jest inna zasada. Przed ostatni pasek jest krótszy. Dlaczego? Można spekulować, że gracze w Liverpool są bardziej zróżnicowanymi graczami i bardziej angażują się w grę całego zespołu, nie skupiając się wyłącznie na ilości strzelonych goli, ale również na prowadzeniu gry.</p>
-</ol>
+<p>MapReduce jest idealnym algorytmem do przetważania ogromnym ilości danych. Jeżeli operujemy na mniejszych zbiorach szybciej można wyciągnąć informacje z pliku za pomocą biblioteki pandas, która jest prostsza w użyciu, jednak przy większej ilości plików, ponad 5GB, mapreduce jest idealnym wyborem.</p>
