@@ -1,0 +1,21 @@
+Position,Club,Played,Won,Drawn,Lost,GF,GA,GD,Points,Next
+1,Liverpool,25,24,1,0,60,15,+45,73,Norwich City
+2,Manchester City,25,16,3,6,65,29,+36,51,Leicester City
+3,Leicester City,25,15,4,6,54,26,+28,49,Wolverhampton Wanderers
+4,Chelsea,25,12,5,8,43,34,+9,41,Manchester United
+5,Sheffield United,26,10,9,7,28,24,+4,39,Brighton and Hove Albion
+6,Tottenham Hotspur,25,10,7,8,40,32,+8,37,Aston Villa
+7,Everton,26,10,6,10,34,38,-4,36,Arsenal
+8,Manchester United,25,9,8,8,36,29,+7,35,Chelsea
+9,Wolverhampton Wanderers,25,8,11,6,35,32,+3,35,Leicester City
+10,Arsenal,25,6,13,6,32,34,-2,31,Newcastle United
+11,Burnley,25,9,4,12,28,38,-10,31,Southampton
+12,Newcastle United,25,8,7,10,24,36,-12,31,Arsenal
+13,Southampton,25,9,4,12,31,46,-15,31,Burnley
+14,Crystal Palace,26,7,9,10,23,32,-9,30,Newcastle United
+15,Brighton and Hove Albion,26,6,9,11,31,38,-7,27,Sheffield United
+16,Bournemouth,26,7,5,14,26,40,-14,26,Burnley
+17,Aston Villa,25,7,4,14,32,47,-15,25,Tottenham Hotspur
+18,West Ham United,25,6,6,13,30,43,-13,24,Liverpool
+19,Watford,26,5,9,12,24,40,-16,24,Manchester United
+20,Norwich City,25,4,6,15,24,47,-23,18,Liverpool
